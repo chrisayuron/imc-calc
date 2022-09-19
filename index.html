@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - CALC</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">CALCULADORA DE IMC</h1>
+        <div class="container-left">
+            <div class="input-container">
+                <label class="form-label" for="peso">Peso</label>
+                <input class="form-control" type="text" id="peso"  autofocus>
+            </div>
+            <div class="input-container">
+                <label class="form-label" for="altura">Altura</label>
+                <input class="form-control" type="text" id="altura">
+            </div>
+
+            <div class="input-container">
+                <button id="button" class="btn">CALCULAR</button>
+            </div>
+        </div>
+        <div class="container-right">
+            <p>SU IMC (Indice de Masa Comporal) es:</p>
+            <div class="valor" id="valor">0</div>
+            <div>
+                <img src="./unnamed.png" alt="imc" >
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
