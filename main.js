@@ -5,9 +5,10 @@ function fCalcular(){
         alert("No se puede calcular sin datos")
         document.getElementById('peso').focus()
     } else{
-    if(altura>100){
+    if(altura>=35 && altura<=300){
         altura=altura/100
     }
+    if(altura>0.35 && altura<+3.0){
 
     let imc=(peso/altura**2).toFixed(1)
     let valor=document.getElementById('valor')
@@ -23,7 +24,10 @@ function fCalcular(){
     } else{
         valor.style.backgroundColor=`#F73308`
     }
+    }else{
+        alert("Hay algun error con el dato de altura")
     }
+}
 }
 
 function fReiniciar(){
@@ -39,3 +43,4 @@ bCalcular.addEventListener('click',fCalcular)
 
 const bReiniciar = document.getElementById('reiniciar')
 bReiniciar.addEventListener('click',fReiniciar)
+
