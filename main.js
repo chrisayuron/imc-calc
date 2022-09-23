@@ -1,4 +1,4 @@
-function calcular(){
+function fCalcular(){
     const peso = document.getElementById('peso').value
     let altura = document.getElementById('altura').value
     if(peso=="" || altura==""){
@@ -26,5 +26,16 @@ function calcular(){
     }
 }
 
-const button = document.getElementById('button')
-button.addEventListener('click',calcular)
+function fReiniciar(){
+    document.getElementById('peso').value=''
+    document.getElementById('altura').value=''
+    document.getElementById('valor').innerText=''
+    document.getElementById('valor').style.backgroundColor='#fff'
+}
+
+
+const bCalcular = document.getElementById('calcular')
+bCalcular.addEventListener('click',fCalcular)
+
+const bReiniciar = document.getElementById('reiniciar')
+bReiniciar.addEventListener('click',fReiniciar)
